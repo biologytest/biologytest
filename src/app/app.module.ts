@@ -7,6 +7,8 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 
+import { HomepageService } from "./service/homepage.service";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +20,7 @@ import { FooterComponent } from './footer/footer.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [HomepageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

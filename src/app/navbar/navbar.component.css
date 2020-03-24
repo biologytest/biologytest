@@ -1,6 +1,8 @@
 .navbar-container {
-  padding: 1rem 2rem;
-  background-color: #2b580c;
+  position: sticky;
+  top: 0;
+  padding: 0rem 2rem;
+  background-color: #2e582f;
   color: #fff;
 }
 
@@ -16,13 +18,19 @@
 
 .nav-list {
   display: flex;
+  margin: 0;
   font-size: 1.5rem;
   list-style: none;
 }
 
 .nav-item-link {
+  display: inline-block;
   text-decoration: none;
   color: #fff;
-  margin-right: 1rem;
+  padding: 1.5rem 2rem;
+}
+
+.nav-list-item:hover {
+  background-color: #3b5849;
 }
 
