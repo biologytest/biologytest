@@ -8,13 +8,17 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 
 import { HomepageService } from "./service/homepage.service";
+import { TestComponent } from './test/test.component';
+import { PreparationComponent } from './preparation/preparation.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomepageComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    TestComponent,
+    PreparationComponent
   ],
   imports: [
     BrowserModule,

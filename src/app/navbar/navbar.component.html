@@ -1,15 +1,22 @@
 <div class="navbar-container">
   <nav class="nav">
     <div class="nav-content">
-      <div class="nav-logo">Your biology</div>
+      <div class="nav-logo">
+        <a [routerLink]="['/home']"
+           class="nav-item-link">
+          Your biology
+        </a>
+      </div>
       <ul class="nav-list">
         <li class="nav-list-item">
-          <a href="#" class="nav-item-link">
+          <a [routerLink]="['/tests']"
+             class="nav-item-link">
             Тестування
           </a>
         </li>
         <li class="nav-list-item">
-          <a href="#" class="nav-item-link">
+          <a [routerLink]="['/prepare']"
+             class="nav-item-link">
             Матеріали для самопідготовки
           </a>
         </li>
