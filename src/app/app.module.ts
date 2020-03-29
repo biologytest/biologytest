@@ -10,6 +10,10 @@ import { FooterComponent } from './footer/footer.component';
 import { HomepageService } from "./service/homepage.service";
 import { TestComponent } from './test/test.component';
 import { PreparationComponent } from './preparation/preparation.component';
+import { TestListComponent } from './test/test-list/test-list.component';
+import { TestListItemComponent } from './test/test-list/test-list-item/test-list-item.component';
+import { TestThemesComponent } from './test/test-themes/test-themes.component';
+import { TestThemesItemComponent } from './test/test-themes/test-themes-item/test-themes-item.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +22,11 @@ import { PreparationComponent } from './preparation/preparation.component';
     NavbarComponent,
     FooterComponent,
     TestComponent,
-    PreparationComponent
+    PreparationComponent,
+    TestListComponent,
+    TestListItemComponent,
+    TestThemesComponent,
+    TestThemesItemComponent
   ],
   imports: [
     BrowserModule,

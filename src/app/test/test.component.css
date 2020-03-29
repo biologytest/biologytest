@@ -1,0 +1,10 @@
+.container {
+  margin: 0 100px;
+}
+
+.test-title {
+  display: flex;
+  justify-content: center;
+  font-family: 'Montserrat';
+  font-size: 1.3rem;
+}
