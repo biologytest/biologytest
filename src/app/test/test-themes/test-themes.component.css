@@ -1,13 +1,15 @@
 .themes-list {
   list-style: none;
+  text-align: center;
 }
 
 .themes-list-item {
   padding: 0.5rem;
   font-size: 1.2rem;
-}
-
-.list-item-link {
   color: #000;
   cursor: pointer;
+}
+
+.visible {
+  display: none;
 }

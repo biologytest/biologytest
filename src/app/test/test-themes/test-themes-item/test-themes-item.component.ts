@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, HostListener, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-test-themes-item',
@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./test-themes-item.component.css']
 })
 export class TestThemesItemComponent implements OnInit {
+  @Input() itemName = "Рослини";
+  private showItem = false;
 
   constructor() { }
 
   ngOnInit() {
   }
 
+  private  changeVisibility(): void {
+    this.showItem = !this.showItem;
+  }
 }

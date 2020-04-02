@@ -1,0 +1,17 @@
+.themes {
+  list-style: none;
+  text-align: center;
+}
+
+.visible {
+  display: none;
+}
+
+.list-item-link {
+  margin-bottom: 0.5rem;
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  padding: 1rem;
+  background-color: #2e582f;
+}

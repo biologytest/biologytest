@@ -1,1 +1,9 @@
-
+<div class="list-item-link" (click)="changeVisibility()">
+  {{ itemName }}
+</div>
+<div class="themes" [class.visible]="!showItem">
+  <div class="themes-subitem">Тема</div>
+  <div class="themes-subitem">Тема</div>
+  <div class="themes-subitem">Тема</div>
+  <div class="themes-subitem">Тема</div>
+</div>
