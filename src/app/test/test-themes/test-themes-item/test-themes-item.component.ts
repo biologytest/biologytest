@@ -14,7 +14,7 @@ export class TestThemesItemComponent implements OnInit {
   ngOnInit() {
   }
 
-  private  changeVisibility(): void {
+  public changeVisibility(): void {
     this.showItem = !this.showItem;
   }
 }
