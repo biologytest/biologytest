@@ -7,7 +7,7 @@ import {Component, HostListener, Input, OnInit} from '@angular/core';
 })
 export class TestThemesItemComponent implements OnInit {
   @Input() itemName = "Рослини";
-  private showItem = false;
+  public showItem = false;
 
   constructor() { }
 
