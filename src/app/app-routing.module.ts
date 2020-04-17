@@ -6,6 +6,7 @@ import { HomepageService } from './service/homepage.service';
 import { TestComponent } from './test/test.component';
 import { PreparationComponent } from './preparation/preparation.component';
 import { TestListComponent } from './test/test-list/test-list.component';
+import {ClassesListComponent} from "./classes/classes-list/classes-list.component";
 
 
 const routes: Routes = [
@@ -17,6 +18,10 @@ const routes: Routes = [
   {
     path: 'home',
     component: HomepageComponent
+  },
+  {
+    path: 'classes',
+    component: ClassesListComponent
   },
   {
     path: 'tests',

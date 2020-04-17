@@ -1,0 +1,16 @@
+.themes-list {
+  list-style: none;
+  text-align: center;
+}
+
+.themes-list-item {
+  margin: 0 100px;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  color: #000;
+  cursor: pointer;
+}
+
+.visible {
+  display: none;
+}

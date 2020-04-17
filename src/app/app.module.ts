@@ -14,6 +14,9 @@ import { TestListComponent } from './test/test-list/test-list.component';
 import { TestListItemComponent } from './test/test-list/test-list-item/test-list-item.component';
 import { TestThemesComponent } from './test/test-themes/test-themes.component';
 import { TestThemesItemComponent } from './test/test-themes/test-themes-item/test-themes-item.component';
+import { ClassesComponent } from './classes/classes.component';
+import { ClassesItemComponent } from './classes/classes-list/classes-item/classes-item.component';
+import { ClassesListComponent } from './classes/classes-list/classes-list.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,10 @@ import { TestThemesItemComponent } from './test/test-themes/test-themes-item/tes
     TestListComponent,
     TestListItemComponent,
     TestThemesComponent,
-    TestThemesItemComponent
+    TestThemesItemComponent,
+    ClassesComponent,
+    ClassesItemComponent,
+    ClassesListComponent
   ],
   imports: [
     BrowserModule,
