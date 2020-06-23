@@ -5,7 +5,7 @@ import { HttpClient } from "@angular/common/http";
   providedIn: 'root'
 })
 export class AuthService {
-  private backEndUrl = 'https://biologytest.herokuapp.com//api/signup';
+  private backEndUrl = 'https://biologytest.herokuapp.com/api/signup';
 
   constructor(private http: HttpClient) { }
 
