@@ -7,6 +7,8 @@ import { TestComponent } from './test/test.component';
 import { PreparationComponent } from './preparation/preparation.component';
 import { TestListComponent } from './test/test-list/test-list.component';
 import {ClassesListComponent} from "./classes/classes-list/classes-list.component";
+import {SignInComponent} from "./auth/sign-in/sign-in.component";
+import {SignUpComponent} from "./auth/sign-up/sign-up.component";
 
 
 const routes: Routes = [
@@ -34,6 +36,14 @@ const routes: Routes = [
   {
     path: 'tests/start',
     component: TestListComponent
+  },
+  {
+    path: 'sign-in',
+    component: SignInComponent
+  },
+  {
+    path: 'sign-up',
+    component: SignUpComponent
   }
 ];
 

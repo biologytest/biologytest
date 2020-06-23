@@ -17,6 +17,11 @@ import { TestThemesItemComponent } from './test/test-themes/test-themes-item/tes
 import { ClassesComponent } from './classes/classes.component';
 import { ClassesItemComponent } from './classes/classes-list/classes-item/classes-item.component';
 import { ClassesListComponent } from './classes/classes-list/classes-list.component';
+import { SignInComponent } from './auth/sign-in/sign-in.component';
+import { SignUpComponent } from './auth/sign-up/sign-up.component';
+import {FormsModule} from "@angular/forms";
+import {HttpClientModule} from "@angular/common/http";
+import {AuthService} from "./service/auth.service";
 
 @NgModule({
   declarations: [
@@ -32,13 +37,17 @@ import { ClassesListComponent } from './classes/classes-list/classes-list.compon
     TestThemesItemComponent,
     ClassesComponent,
     ClassesItemComponent,
-    ClassesListComponent
+    ClassesListComponent,
+    SignInComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [HomepageService],
+  providers: [HomepageService, AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

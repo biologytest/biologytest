@@ -1,0 +1,22 @@
+<div class="wrapper">
+  <h1>Зареєструйтесь</h1>
+  <form class="form">
+    <label class="label-field">
+      Пошта
+    </label>
+    <input [(ngModel)]="userData.email" name="email" type="email" class="input-field">
+    <label class="label-field">
+      Пароль
+    </label>
+    <input [(ngModel)]="userData.password" name="password" type="text" class="input-field">
+    <button class="submit-btn" (click)="signUp()">Увійти</button>
+  </form>
+  <span>
+    Маєте аккаунт?
+    <a routerLink="/sign-in"
+       routerLinkActive="active"
+    >
+      Увійти
+    </a>
+  </span>
+</div>

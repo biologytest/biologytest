@@ -1,0 +1,16 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 100px;
+  max-width: 768px;
+}
+
+.input-field {
+  margin-bottom: 20px;
+  line-height: 24px;
+}
+
+.submit-btn {
+  line-height: 24px;
+  font-size: 16px;
+}
