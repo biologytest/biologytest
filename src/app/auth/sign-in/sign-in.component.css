@@ -1,8 +1,11 @@
 .wrapper {
-  display: flex;
-  flex-direction: column;
   margin: 0 auto 100px;
   max-width: 768px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
 }
 
 .input-field {
@@ -13,4 +16,5 @@
 .submit-btn {
   line-height: 24px;
   font-size: 16px;
+  margin-bottom: 48px;
 }

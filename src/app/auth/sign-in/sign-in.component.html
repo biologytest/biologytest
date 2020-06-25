@@ -1,12 +1,22 @@
 <div class="wrapper">
-  <h1>Увійдіть в акаунт</h1>
-  <label class="label-field">
-    Пошта
-  </label>
-  <input type="email" class="input-field">
-  <label class="label-field">
-    Пароль
-  </label>
-  <input type="text" class="input-field">
-  <button class="submit-btn">Увійти</button>
+  <h1>Увійдіть</h1>
+  <form class="form">
+    <label class="label-field">
+      Пошта
+    </label>
+    <input [(ngModel)]="userData.email" name="email" type="email" class="input-field">
+    <label class="label-field">
+      Пароль
+    </label>
+    <input [(ngModel)]="userData.password" name="password" type="text" class="input-field">
+    <button class="submit-btn" (click)="signIn()">Увійти</button>
+  </form>
+  <span>
+    Маєте аккаунт?
+    <a routerLink="/sign-in"
+       routerLinkActive="active"
+    >
+      Увійти
+    </a>
+  </span>
 </div>
