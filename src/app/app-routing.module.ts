@@ -33,7 +33,8 @@ const routes: Routes = [
   },
   {
     path: 'prepare',
-    component: PreparationComponent
+    component: PreparationComponent,
+    canActivate: [AuthGuard]
   },
   {
     path: 'tests/start',
