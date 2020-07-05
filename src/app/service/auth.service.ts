@@ -16,4 +16,12 @@ export class AuthService {
   public signIn(user) {
     return this.http.post<any>(`${this.backEndUrl}/signin`, user);
   }
+
+  public isLoggedIn(): boolean {
+    return !!localStorage.getItem('token');
+  }
+
+  public getToken(): string {
+    return localStorage.getItem('token');
+  }
 }

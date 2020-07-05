@@ -20,8 +20,10 @@ import { ClassesListComponent } from './classes/classes-list/classes-list.compon
 import { SignInComponent } from './auth/sign-in/sign-in.component';
 import { SignUpComponent } from './auth/sign-up/sign-up.component';
 import {FormsModule} from "@angular/forms";
-import {HttpClientModule} from "@angular/common/http";
+import {HttpClientModule, HTTP_INTERCEPTORS} from "@angular/common/http";
 import {AuthService} from "./service/auth.service";
+import {AuthGuard} from "./auth.guard";
+import {TokenInterceptorService} from "./token-interceptor.service";
 
 @NgModule({
   declarations: [
@@ -45,9 +47,14 @@ import {AuthService} from "./service/auth.service";
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+
   ],
-  providers: [HomepageService, AuthService],
+  providers: [HomepageService, AuthService, AuthGuard, {
+    provide: HTTP_INTERCEPTORS,
+    useClass: TokenInterceptorService,
+    multi: true
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
